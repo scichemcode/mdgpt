@@ -1,7 +1,7 @@
 [
   {
     "id": "verlet-1964",
-    "citation": "Verlet, L. Phys. Rev. 136, A405 (1964).",
+    "citation": "Verlet, L. Phys. Rev. 136, A405 (1964). DOI: 10.1103/PhysRev.136.A405.",
     "doi": "10.1103/PhysRev.136.A405",
     "url": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.136.A405",
     "topics": ["Verlet integration", "Lennard-Jones fluids", "MD methodology"],
@@ -9,26 +9,26 @@
   },
   {
     "id": "rahman-stillinger-1971",
-    "citation": "Rahman, A.; Stillinger, F. H. J. Chem. Phys. 55, 3336 (1971).",
-    "doi": null,
+    "citation": "Rahman, A.; Stillinger, F. H. J. Chem. Phys. 55, 3336 (1971). DOI: 10.1063/1.1676585.",
+    "doi": "10.1063/1.1676585",
     "url": "https://pubs.aip.org/aip/jcp/article-abstract/55/7/3336/804207/Molecular-Dynamics-Study-of-Liquid-Water",
     "topics": ["liquid water", "MD benchmarks", "radial distribution functions"],
     "notes": "Classic MD study of liquid water, establishing early benchmarks and analysis practices."
   },
   {
-    "id": "maier-2015-ct400109a",
-    "citation": "Maier, J. A. et al. J. Chem. Theory Comput. (2015).",
+    "id": "maier-ct400109a",
+    "citation": "Maier, J. A. et al. J. Chem. Theory Comput. DOI: 10.1021/ct400109a.",
     "doi": "10.1021/ct400109a",
     "url": "https://pubs.acs.org/doi/full/10.1021/ct400109a",
     "topics": ["AMBER force fields", "protein parameters", "validation"],
-    "notes": "Force-field parameter refinement work commonly associated with AMBER ff14SB updates."
+    "notes": "Force-field parameter refinement work associated with the DOI reference; full bibliographic metadata should be retrieved from the DOI link when available."
   },
   {
     "id": "jcamd-2015-9840-9",
-    "citation": "J. Comput.-Aided Mol. Des. (2015).",
+    "citation": "J. Comput.-Aided Mol. Des. DOI: 10.1007/s10822-015-9840-9.",
     "doi": "10.1007/s10822-015-9840-9",
     "url": "https://link.springer.com/article/10.1007/s10822-015-9840-9",
     "topics": ["biomolecular modeling", "MD best practices", "simulation workflows"],
-    "notes": "Overview of biomolecular modeling guidance relevant to MD setup, analysis, and validation."
+    "notes": "Overview of biomolecular modeling guidance relevant to MD setup, analysis, and validation; full author and title metadata are available via the DOI link."
   }
 ]

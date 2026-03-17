@@ -24,11 +24,15 @@ The assistant is explicitly grounded in the following papers:
 
 - Verlet, L. “Computer ‘Experiments’ on Classical Fluids. I. Thermodynamical
   Properties of Lennard-Jones Molecules.” *Phys. Rev.* **136**, A405 (1964).
+  DOI: 10.1103/PhysRev.136.A405.
   https://journals.aps.org/pr/abstract/10.1103/PhysRev.136.A405
 - Rahman, A.; Stillinger, F. H. “Molecular Dynamics Study of Liquid Water.”
-  *J. Chem. Phys.* **55**, 3336 (1971).
+  *J. Chem. Phys.* **55**, 3336 (1971). DOI: 10.1063/1.1676585.
   https://pubs.aip.org/aip/jcp/article-abstract/55/7/3336/804207/Molecular-Dynamics-Study-of-Liquid-Water
-- Maier, J. A. et al. *J. Chem. Theory Comput.* (2015). DOI: 10.1021/ct400109a.
+- Maier, J. A. et al. *J. Chem. Theory Comput.* DOI: 10.1021/ct400109a.
   https://pubs.acs.org/doi/full/10.1021/ct400109a
-- *J. Comput.-Aided Mol. Des.* (2015). DOI: 10.1007/s10822-015-9840-9.
+- *J. Comput.-Aided Mol. Des.* DOI: 10.1007/s10822-015-9840-9.
   https://link.springer.com/article/10.1007/s10822-015-9840-9
+
+For the papers listed with DOI-only citations, retrieve full bibliographic
+metadata from the DOI links when integrating with a citation manager.
