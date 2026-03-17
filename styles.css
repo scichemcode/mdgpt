@@ -78,6 +78,16 @@ a:focus {
   cursor: pointer;
 }
 
+.ghost-button,
+.primary-button,
+.secondary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
 .hero {
   padding: 80px 0 60px;
 }
@@ -133,6 +143,16 @@ a:focus {
 
 .secondary-button {
   background: var(--primary-soft);
+  color: var(--primary);
+}
+
+.primary-button:hover,
+.primary-button:focus {
+  color: white;
+}
+
+.secondary-button:hover,
+.secondary-button:focus {
   color: var(--primary);
 }
 
@@ -235,6 +255,26 @@ a:focus {
   color: var(--muted);
 }
 
+.fundamentals-grid {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  align-items: start;
+}
+
+.learning-path {
+  padding-left: 18px;
+  color: var(--muted);
+  margin: 12px 0 0;
+}
+
+.callout-list {
+  padding-left: 18px;
+  color: var(--muted);
+  margin: 12px 0 0;
+}
+
 .paper-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -260,6 +300,19 @@ a:focus {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 24px;
   align-items: center;
+}
+
+.session-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.session-steps {
+  padding-left: 18px;
+  color: var(--muted);
+  margin: 16px 0 0;
 }
 
 .get-started ul {
@@ -315,7 +368,7 @@ pre {
     display: none;
   }
 
-  .ghost-button {
+  .header-cta {
     display: none;
   }
 }
