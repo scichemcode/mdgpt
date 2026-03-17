@@ -18,11 +18,15 @@
         <div class="brand">MDGPT</div>
         <nav class="nav">
           <a href="#overview">Overview</a>
+          <a href="#fundamentals">Fundamentals</a>
           <a href="#workflow">Workflow</a>
           <a href="#papers">Papers</a>
+          <a href="#start-session">Start Session</a>
           <a href="#get-started">Get Started</a>
         </nav>
-        <button class="ghost-button" type="button">Launch Assistant</button>
+        <a class="ghost-button header-cta" href="#start-session">
+          Launch Assistant
+        </a>
       </div>
     </header>
 
@@ -31,29 +35,36 @@
         <div class="container hero-grid">
           <div class="hero-copy">
             <p class="eyebrow">Molecular Dynamics, grounded in literature</p>
-            <h1>Clarity-first answers for MD workflows and simulations.</h1>
+            <h1>Clarity-first guidance for MD fundamentals and simulations.</h1>
             <p class="lead">
               MDGPT is a lightweight configuration and knowledge pack that keeps
               your molecular dynamics assistant anchored in foundational papers
-              while providing clear guidance on integration schemes, water
-              models, and force-field best practices.
+              while walking learners through forces, integration, ensembles, and
+              analysis basics.
             </p>
             <div class="hero-actions">
-              <button class="primary-button" type="button">Start a session</button>
-              <button class="secondary-button" type="button">View knowledge pack</button>
+              <a class="primary-button" href="#start-session">Start a session</a>
+              <a
+                class="secondary-button"
+                href="knowledge/papers.json"
+                target="_blank"
+                rel="noopener"
+              >
+                View knowledge pack
+              </a>
             </div>
             <div class="hero-highlights">
               <div>
+                <h3>6</h3>
+                <p>Core MD concepts</p>
+              </div>
+              <div>
                 <h3>4</h3>
-                <p>Foundational MD papers</p>
+                <p>Foundational papers</p>
               </div>
               <div>
-                <h3>1200</h3>
-                <p>Max response tokens</p>
-              </div>
-              <div>
-                <h3>0.2</h3>
-                <p>Temperature setting</p>
+                <h3>3</h3>
+                <p>Step learning path</p>
               </div>
             </div>
           </div>
@@ -61,18 +72,84 @@
             <div class="panel-header">MDGPT Response Preview</div>
             <div class="panel-body">
               <p>
-                <strong>Question:</strong> What integration scheme is recommended
-                for stable liquid water simulations?
+                <strong>Question:</strong> How do NVT and NPT ensembles differ
+                for beginners?
               </p>
               <p>
-                <strong>Response:</strong> Use the velocity Verlet scheme for
-                stable energy conservation in liquid water simulations, as shown
-                in Verlet (1964) and Rahman &amp; Stillinger (1971).
+                <strong>Response:</strong> NVT fixes particle count, volume, and
+                temperature, while NPT allows the volume to fluctuate to match a
+                target pressure. Start with NVT for equilibration and move to
+                NPT when density matters, citing foundational MD references.
               </p>
               <div class="panel-tags">
-                <span>Verlet (1964)</span>
-                <span>Rahman &amp; Stillinger (1971)</span>
+                <span>Ensembles</span>
+                <span>Thermostats</span>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="fundamentals">
+        <div class="container">
+          <div class="section-header">
+            <h2>Fundamentals-first explanations</h2>
+            <p>
+              Designed for learners who need the “why” behind MD before diving
+              into production workflows.
+            </p>
+          </div>
+          <div class="card-grid">
+            <article class="card">
+              <h3>Forces &amp; potentials</h3>
+              <p>
+                Understand how force fields map atomic interactions into
+                potential energy landscapes and why force evaluation drives each
+                integration step.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Integration &amp; stability</h3>
+              <p>
+                Learn how time step, velocity Verlet updates, and numerical
+                stability connect to energy conservation in classic MD papers.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Ensembles &amp; controls</h3>
+              <p>
+                Compare NVE, NVT, and NPT ensembles, plus the thermostats and
+                barostats that keep simulations on target.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Equilibration &amp; analysis</h3>
+              <p>
+                Learn how to check convergence, read RDFs, and interpret diffusion
+                metrics before trusting a production run.
+              </p>
+            </article>
+          </div>
+          <div class="fundamentals-grid">
+            <div>
+              <h3>Learning path</h3>
+              <ol class="learning-path">
+                <li>Start with energy functions and force evaluation.</li>
+                <li>Connect integration schemes to stability and accuracy.</li>
+                <li>Layer in ensembles, controls, and analysis metrics.</li>
+              </ol>
+            </div>
+            <div class="callout">
+              <div class="callout-header">Beginner checkpoints</div>
+              <p>
+                Every response emphasizes vocabulary, assumptions, and citations
+                so newcomers can build intuition quickly.
+              </p>
+              <ul class="callout-list">
+                <li>Define terms before using them.</li>
+                <li>Explain why a method is chosen, not just how.</li>
+                <li>Link concepts back to the cited papers.</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -151,6 +228,65 @@
                 DOI: 10.1007/s10822-015-9840-9
               </a>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="start-session">
+        <div class="container get-started session-grid">
+          <div>
+            <h2>Start a session</h2>
+            <p>
+              Use the MDGPT assets below to open a session in your GPT runtime
+              and begin with a fundamentals-focused question.
+            </p>
+            <ol class="session-steps">
+              <li>
+                Open <code>prompts/system.md</code> and load it as the system
+                prompt.
+              </li>
+              <li>
+                Attach <code>knowledge/papers.json</code> as the primary
+                bibliography.
+              </li>
+              <li>
+                Begin with a fundamentals question (sample prompt included).
+              </li>
+            </ol>
+            <div class="session-actions">
+              <a
+                class="primary-button"
+                href="prompts/system.md"
+                target="_blank"
+                rel="noopener"
+              >
+                Open system prompt
+              </a>
+              <a
+                class="secondary-button"
+                href="knowledge/papers.json"
+                target="_blank"
+                rel="noopener"
+              >
+                Open papers list
+              </a>
+              <a
+                class="ghost-button"
+                href="config/gpt-config.json"
+                target="_blank"
+                rel="noopener"
+              >
+                View config
+              </a>
+            </div>
+          </div>
+          <div class="callout">
+            <div class="callout-header">Session starter</div>
+            <p>Paste this as your first user message:</p>
+            <pre>
+Teach me the difference between NVE, NVT, and NPT ensembles, and cite the
+foundational papers behind your explanation.
+            </pre>
           </div>
         </div>
       </section>
