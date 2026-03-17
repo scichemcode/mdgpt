@@ -2,8 +2,8 @@
   "name": "MDGPT",
   "description": "Molecular Dynamics GPT grounded in foundational literature.",
   "schema_version": "1.0",
-  "system_prompt_path": "../prompts/system.md",
-  "knowledge_base_path": "../knowledge/papers.json",
+  "system_prompt_path": "prompts/system.md",
+  "knowledge_base_path": "knowledge/papers.json",
   "citation_policy": "Cite the foundational papers for integration schemes, water models, and force-field guidance.",
   "model": {
     "provider": "openai",
