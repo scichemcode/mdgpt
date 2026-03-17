@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MDGPT — Molecular Dynamics Assistant</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">MDGPT</div>
+        <nav class="nav">
+          <a href="#overview">Overview</a>
+          <a href="#workflow">Workflow</a>
+          <a href="#papers">Papers</a>
+          <a href="#get-started">Get Started</a>
+        </nav>
+        <button class="ghost-button" type="button">Launch Assistant</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="overview">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Molecular Dynamics, grounded in literature</p>
+            <h1>Clarity-first answers for MD workflows and simulations.</h1>
+            <p class="lead">
+              MDGPT is a lightweight configuration and knowledge pack that keeps
+              your molecular dynamics assistant anchored in foundational papers
+              while providing clear guidance on integration schemes, water
+              models, and force-field best practices.
+            </p>
+            <div class="hero-actions">
+              <button class="primary-button" type="button">Start a session</button>
+              <button class="secondary-button" type="button">View knowledge pack</button>
+            </div>
+            <div class="hero-highlights">
+              <div>
+                <h3>4</h3>
+                <p>Foundational MD papers</p>
+              </div>
+              <div>
+                <h3>1200</h3>
+                <p>Max response tokens</p>
+              </div>
+              <div>
+                <h3>0.2</h3>
+                <p>Temperature setting</p>
+              </div>
+            </div>
+          </div>
+          <div class="hero-panel" aria-label="Sample assistant response">
+            <div class="panel-header">MDGPT Response Preview</div>
+            <div class="panel-body">
+              <p>
+                <strong>Question:</strong> What integration scheme is recommended
+                for stable liquid water simulations?
+              </p>
+              <p>
+                <strong>Response:</strong> Use the velocity Verlet scheme for
+                stable energy conservation in liquid water simulations, as shown
+                in Verlet (1964) and Rahman &amp; Stillinger (1971).
+              </p>
+              <div class="panel-tags">
+                <span>Verlet (1964)</span>
+                <span>Rahman &amp; Stillinger (1971)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="workflow">
+        <div class="container">
+          <div class="section-header">
+            <h2>Workflow built for research teams</h2>
+            <p>
+              Bring MDGPT into your workflow with a prompt, a knowledge pack, and
+              trusted citations for every response.
+            </p>
+          </div>
+          <div class="card-grid">
+            <article class="card">
+              <h3>Configure the assistant</h3>
+              <p>
+                Use <code>config/gpt-config.json</code> to define the provider,
+                model, and response limits.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Ground in literature</h3>
+              <p>
+                Supply <code>knowledge/papers.json</code> to ensure responses are
+                tied to canonical MD papers.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Deliver consistent answers</h3>
+              <p>
+                The system prompt in <code>prompts/system.md</code> enforces
+                citations and scoped answers.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="papers">
+        <div class="container">
+          <div class="section-header">
+            <h2>Foundational papers</h2>
+            <p>
+              MDGPT is explicitly grounded in the following literature. These
+              are the anchor points for citation-first responses.
+            </p>
+          </div>
+          <div class="paper-grid">
+            <article class="paper-card">
+              <h3>Verlet (1964)</h3>
+              <p>Computer "Experiments" on Classical Fluids.</p>
+              <a href="https://journals.aps.org/pr/abstract/10.1103/PhysRev.136.A405">
+                DOI: 10.1103/PhysRev.136.A405
+              </a>
+            </article>
+            <article class="paper-card">
+              <h3>Rahman &amp; Stillinger (1971)</h3>
+              <p>Molecular Dynamics Study of Liquid Water.</p>
+              <a href="https://pubs.aip.org/aip/jcp/article-abstract/55/7/3336/804207/Molecular-Dynamics-Study-of-Liquid-Water">
+                DOI: 10.1063/1.1676585
+              </a>
+            </article>
+            <article class="paper-card">
+              <h3>Maier et al. (JChemCT)</h3>
+              <p>Force-field parameterization benchmarks.</p>
+              <a href="https://pubs.acs.org/doi/full/10.1021/ct400109a">
+                DOI: 10.1021/ct400109a
+              </a>
+            </article>
+            <article class="paper-card">
+              <h3>JCAMD Review</h3>
+              <p>Computational-aided molecular design best practices.</p>
+              <a href="https://link.springer.com/article/10.1007/s10822-015-9840-9">
+                DOI: 10.1007/s10822-015-9840-9
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="get-started">
+        <div class="container get-started">
+          <div>
+            <h2>Get started in minutes</h2>
+            <p>
+              Clone the repo, open this site, and wire the MDGPT assets into your
+              GPT runtime for consistent, research-grade responses.
+            </p>
+            <ul>
+              <li>Load <code>prompts/system.md</code> as the system prompt.</li>
+              <li>Provide <code>knowledge/papers.json</code> to your runtime.</li>
+              <li>Keep responses tied to the cited papers above.</li>
+            </ul>
+          </div>
+          <div class="callout">
+            <div class="callout-header">Quick Start</div>
+            <pre>
+open index.html
+
+config/gpt-config.json
+prompts/system.md
+knowledge/papers.json
+            </pre>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <strong>MDGPT</strong>
+          <p>Lightweight, citation-first molecular dynamics guidance.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#overview">Overview</a>
+          <a href="#workflow">Workflow</a>
+          <a href="#papers">Papers</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

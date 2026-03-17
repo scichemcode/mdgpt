@@ -18,6 +18,12 @@ structured prompt plus a curated list of key papers.
    MD integration schemes, water models, force-field parameterization, or
    methodological best practices.
 
+## Website
+
+Open `index.html` in a browser to view a light-themed overview site for the
+MDGPT knowledge pack. The page highlights the workflow, citations, and quick
+start references for the configuration files.
+
 ## Foundational papers
 
 The assistant is explicitly grounded in the following papers:
