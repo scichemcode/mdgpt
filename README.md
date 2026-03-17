@@ -6,7 +6,7 @@ structured prompt plus a curated list of key papers.
 
 ## What’s included
 
-- `config/gpt-config.json` — GPT configuration metadata and paths.
+- `config/gpt-config.json` — GPT configuration metadata with repo-root-relative asset paths.
 - `prompts/system.md` — System prompt for the MD assistant.
 - `knowledge/papers.json` — Canonical paper references used for grounding.
 
